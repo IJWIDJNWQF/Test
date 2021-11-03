@@ -7,3 +7,10 @@ local Section = Tab:NewSection("Teleport")
 Section:NewButton("Teleport T1", "Teleport T1", function()
     print("Clicked")
 end)
+
+local Tab = Window:NewTab("Exit UI")
+local Section = Tab:NewSection("Exit UI")
+
+Section:NewKeybind("Exit UI", "Exit UI", Enum.KeyCode.G, function()
+	Library:ToggleUI()
+end)
