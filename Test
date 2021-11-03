@@ -4,7 +4,15 @@ local Window = Library.CreateLib("Style Hub", "DarkTheme")
 local Tab = Window:NewTab("Teleport")
 local Section = Tab:NewSection("Teleport")
 
-Section:NewButton("Saber Island", "Saber Island", function()
+Section:NewButton("Teleport T1", "Teleport T1", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+Section:NewButton("Teleport T2", "Teleport T2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
+end)
+
+Section:NewButton("Teleport T3", "Teleport T3", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
