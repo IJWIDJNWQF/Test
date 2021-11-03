@@ -4,7 +4,7 @@ local Window = Library.CreateLib("Style Hub", "DarkTheme")
 local Tab = Window:NewTab("Teleport")
 local Section = Tab:NewSection("Teleport")
 
-Section:NewButton("Teleport T1", "Teleport T1", function()
+Section:NewButton("Teleport Island 1", "Teleport Island 1", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
@@ -15,17 +15,6 @@ Section:NewKeybind("Exit UI", "Exit UI", Enum.KeyCode.G, function()
 	Library:ToggleUI()
 end)
 
-local oldList = {
-  "2019",
-  "2020"
-}
-local newList = {
-  "2021",
-  "2022"
-}
-local dropdown = Section:NewDropdown("Dropdown","Info", oldList, function()
-
-end)
-Section:NewButton("Update Dropdown", "Refreshes Dropdown", function()
-  dropdown:Refresh(newList)
+Section:NewButton("Teleport Island 2", "Teleport Island 2", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
