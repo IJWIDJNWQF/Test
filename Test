@@ -8,10 +8,6 @@ Section:NewButton("Teleport Island 1", "Teleport Island 1", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
-Section:NewButton("Get Item", "Get Item", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
-end)
-
 local Tab = Window:NewTab("Exit UI")
 local Section = Tab:NewSection("Exit UI")
 
