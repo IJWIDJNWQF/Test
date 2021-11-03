@@ -5,7 +5,7 @@ local Tab = Window:NewTab("Teleport")
 local Section = Tab:NewSection("Teleport")
 
 Section:NewButton("Teleport T1", "Teleport T1", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(50.3842735, 81.7892914, -349.757782, 0, 0, 1, 0, 1, -0, -1, 0, 0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new()
 end)
 
 local Tab = Window:NewTab("Exit UI")
@@ -13,4 +13,19 @@ local Section = Tab:NewSection("Exit UI")
 
 Section:NewKeybind("Exit UI", "Exit UI", Enum.KeyCode.G, function()
 	Library:ToggleUI()
+end)
+
+local oldList = {
+  "2019",
+  "2020"
+}
+local newList = {
+  "2021",
+  "2022"
+}
+local dropdown = Section:NewDropdown("Dropdown","Info", oldList, function()
+
+end)
+Section:NewButton("Update Dropdown", "Refreshes Dropdown", function()
+  dropdown:Refresh(newList)
 end)
