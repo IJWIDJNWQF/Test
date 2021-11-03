@@ -5,7 +5,7 @@ local Tab = Window:NewTab("Teleport")
 local Section = Tab:NewSection("Teleport")
 
 Section:NewButton("Teleport T1", "Teleport T1", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-43.8819275, 96.271347, -271.089935, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(50.3842735, 81.7892914, -349.757782, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 
 local Tab = Window:NewTab("Exit UI")
